@@ -1,0 +1,21 @@
+{
+  "name": "whatsapp-vardiya-yanitlayici",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Tek bir WhatsApp grubundaki vardiya çağrılarını güvenli varsayılanlarla izler.",
+  "license": "MIT",
+  "engines": { "node": ">=22.12" },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "check": "node src/cli.js check",
+    "groups": "node --env-file=.env src/cli.js groups",
+    "start": "node --env-file=.env src/cli.js run"
+  },
+  "dependencies": {
+    "qrcode-terminal": "0.12.0",
+    "whatsapp-web.js": "1.34.7"
+  },
+  "overrides": {
+    "puppeteer": "25.16.0"
+  }
+}

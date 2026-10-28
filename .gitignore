@@ -1,0 +1,10 @@
+node_modules/
+.env
+.env.*
+!.env.example
+.local-state/
+.wwebjs_auth/
+.wwebjs_cache/
+.agent-work/
+*.log
+coverage/
